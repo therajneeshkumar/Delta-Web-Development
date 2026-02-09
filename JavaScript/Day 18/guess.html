@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game </title>
+    <style>
+        body {
+            background-color: #333;
+            color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gussing Game </h1>
+
+    <script>
+        const userInput = Number.parseInt(prompt("Enter a max range number : "));
+        let computerNumber = Math.floor(Math.random() * userInput) + 1;
+
+        let userGuess = prompt("Guess a number or type 'quit' to leave : ");
+        /* while(userGuess !== computerNumber) {
+            userGuess = Number.parseInt(prompt("Enter a number again : "));
+        } */
+
+        while(true) {
+            if (userGuess == "quit") {
+                console.log("User Quit");
+                break;
+            } else if (userGuess == computerNumber) {
+                console.log("You are right. Congrats!!! Random Number was", userGuess);
+                break;
+            } else if (userGuess < computerNumber) {
+                userGuess = prompt("Hint : Your guess was too small. Please try again.")
+            } else {
+                userGuess = prompt("Hint : Your guess was too large. Please try again.")
+                //userGuess = prompt("Your guess was wrong. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thread / Twitter Post</title>
+    <style>
+        body {
+            background-color: #333;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h2>Create an object literal for the properties of thread / twitter post which includes - Username, content, likes, reposts, tags</h2>
+
+    <script>
+        const post = {
+            username: "@thestarguys",
+            content: "This is the 10K followers post",
+            likes: 400,
+            reposts : 10,
+            tags: ["@monster_boost__", "@twitter", "@instagram"]
+        }
+
+        console.log('post.username :>> ', post.username);
+        console.log('post["username"] :>> ', post["username"]);
+        console.log('post.content :>> ', post.content);
+        console.log('post["likes"] :>> ', post["likes"]);
+        console.log('post.tags :>> ', post.tags);
+        console.log('post.tags[0] :>> ', post.tags[0]);
+
+        let prop = "reposts";
+        console.log('post[prop] :>> ', post[prop]);
+        console.log('post.prop :>> ', post.prop);
+    </script>
+</body>
+</html>
