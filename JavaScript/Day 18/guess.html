@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guessing Game </title>
-    <style>
-        body {
-            background-color: #333;
-            color: #eee;
-        }
-    </style>
+    <link rel="stylesheet" href="./guess.css">
 </head>
-<body>
-    <h1>Gussing Game </h1>
 
-    <script>
+<body>
+    <div class="container">
+        <h1>Gussing Game </h1>
+        <div class="randomInput">
+            <label for="random">Range of Random Number : </label>
+            <input type="number" name="randomNumber" id="random" placeholder="Enter a number">
+        </div>
+        <p class="randomResult"></p>
+        <div class="content">
+            <div class="top">
+                <p>Guess a number</p>
+                <span>OR</span>
+                <p>Type <span>'Quit'</span> to exit from game</p>
+            </div>
+            <hr class="hr">
+            <div class="middle">
+                <p class="generated"></p>
+                <div class="userInput">
+                    <label for="userInputNumber">Enter Your Number : </label>
+                    <input type="text" name="userInput" id="userInputNumber" placeholder="guess number">
+                </div>
+                <p class="result">You Can See Your Output here</p>
+            </div>
+            <hr class="hr">
+            <div class="bottom">
+                <p class="countMessage">You can see here your total attempts.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./guess.js"></script>
+    <!-- <script>
         const userInput = Number.parseInt(prompt("Enter a max range number : "));
         let computerNumber = Math.floor(Math.random() * userInput) + 1;
 
@@ -37,6 +62,7 @@
                 //userGuess = prompt("Your guess was wrong. Please try again.");
             }
         }
-    </script>
+    </script> -->
 </body>
+
 </html>
