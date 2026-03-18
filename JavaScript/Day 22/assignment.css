@@ -1,0 +1,19 @@
+body {
+    background-color: #333;
+    color: #eee;
+}
+
+h1 {
+    font-size: 45px;
+    /* text-decoration: underline; */
+}
+
+li {
+    font-size: 24px;
+    line-height: 1.8;
+}
+
+.btn {
+    background-color: blue;
+    color: white;
+}
