@@ -1,0 +1,41 @@
+body {
+    font-family: Arial;
+}
+
+#mainImg {
+    height: 450px;
+    width: 25%;
+}
+
+.green {
+    color: green;
+}
+
+.underline {
+    text-decoration: wavy underline sandybrown;
+}
+
+.box {
+    border: 0.25px solid Oblack;
+    background-color: lightgray;
+    width: 200px;
+    padding: 1rem;
+}
+
+.yellowbg {
+    background-color: yellowgreen;
+}
+
+.boxLink {
+    text-decoration: none;
+}
+
+.oldImg {
+    height: 300px;
+    width: 250px;
+    margin-right: 1rem;
+}
+
+#description {
+    background-color:  antiquewhite;
+}
