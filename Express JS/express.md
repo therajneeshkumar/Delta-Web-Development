@@ -2,7 +2,7 @@
 
 - A Node.js web application framework that helps us to make web applications.
 - It is used for **server** side programming or used to create a **server**.
-- Before installing express, Initalize the project folder using **`npm init`** and then install using **`npm install express`**.
+- Before installing express, Initalize the project folder using **`npm init`** or **`npm init -y`** and then install using **`npm install express`**.
 
 ## Uses of Express JS
 
