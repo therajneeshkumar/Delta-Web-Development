@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET and POST Requests</title>
+    <style>
+        body {
+            background-color: #333;
+            color: #eee;
+        }
+
+        form input {
+            padding: 7px 20px;
+            font-weight: 500;
+        }
+
+        button {
+            padding: 5px 15px;
+            font-size: 18px;
+        }
+
+        form div {
+            margin-bottom: 8px;
+        }
+
+        input::placeholder {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>GET Request Form</h3>
+        <form action="http://localhost:8080/register" method="get">
+            <div>
+                <input type="text" name="username" id="user" placeholder="enter username">
+            </div>
+            <div>
+                <input type="password" name="password" id="pass" placeholder="enter password">
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </form>
+    </div> <hr>
+
+    <div class="container">
+        <h3>POST Request Form</h3>
+        <form action="http://localhost:8080/register" method="post">
+            <div>
+                <input type="text" name="username" id="user" placeholder="enter username">
+            </div>
+            <div>
+                <input type="password" name="password" id="pass" placeholder="enter password">
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
