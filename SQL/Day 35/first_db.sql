@@ -51,8 +51,6 @@ VALUES
 -- VALUES
 -- (10, 12, "random", "bob123@gmail.com");
 
-SHOW TABLES;
-
 SELECT * FROM user;
 SELECT id, name FROM user;
 
