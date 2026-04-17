@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new user </title>
+    <style>
+        form {
+            width: 400px;
+            border: 1px solid black;
+            padding: 18px;
+            box-sizing: border-box;
+        }
+        div {
+            margin: 10px 0;
+        }
+        div label, input, button {
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            padding: 10px 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Add New User</h2>
+    <form action="/user" method="post">
+        <div>
+            <label for="username">Username :</label>
+            <input type="text" name="username" id="username" placeholder="Enter username" required>
+        </div>
+        <div>
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email" placeholder="Enter email" required>
+        </div>
+        <div>
+            <label for="pass">Password :</label>
+            <input type="password" name="password" id="pass" placeholder="Enter password" required>
+        </div>
+        <div>
+            <button>Add User</button>
+        </div>
+    </form>
+</body>
+</html>
